@@ -9,7 +9,7 @@ grafana:
     - TZ=Etc/UTC
     - GF_PATHS_DATA=/var/lib/grafana
     - GF_PATHS_LOGS=/var/log/grafana
-    - - GF_FEATURE_TOGGLES_ENABLE=publicDashboards
+    - GF_FEATURE_TOGGLES_ENABLE=publicDashboards
   volumes:
     - ./volumes/grafana/data:/var/lib/grafana
     - ./volumes/grafana/log:/var/log/grafana
